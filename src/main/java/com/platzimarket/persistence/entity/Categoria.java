@@ -10,7 +10,7 @@ public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_ID_CATEGORIA")
     @Column(name = "ID_CATEGORIA")
-    private Long idCateria;
+    private Long idCategoria;
 
     @Column(name = "DESCRIPCION")
     private String descripcion;
@@ -29,12 +29,12 @@ public class Categoria {
         this.productos = productos;
     }
 
-    public Long getIdCateria() {
-        return idCateria;
+    public Long getIdCategoria() {
+        return idCategoria;
     }
 
-    public void setIdCateria(Long idCateria) {
-        this.idCateria = idCateria;
+    public void setIdCategoria(Long idCategoria) {
+        this.idCategoria = idCategoria;
     }
 
     public String getDescripcion() {
